@@ -2,16 +2,12 @@
 ** if an entry below has a third column, it has been supplied as a guide to where the help key/value pair will be used in the UI ** note: do not change this line
 
 ** layout main title help ** note: do not change this line
-defaultrule|
-daterule|
-transformrule|Transform rules change the value of the data within the output file in various ways
-grouprule|Groups link rules together allowing AND and OR operators to be set for rules
 inputtab|Set the input file delimiter (press the Tab key for a tab delimiter) and set the correct header option. Add or delete an input column if you've already created rules for a file but the file has had an extra column added or an existing column removed. Click the re-order button on the far right to enable the dragging of columns up and down if the column position has changed within the input file
 outputtab|Set the output file delimiter, set the correct header option or add an extra column to the passing output file. Click the re-order button on the far right to enable the dragging of columns up and down to change the column position within the passing output file. Select or deselect the columns for output one at a time or all at once
 optiontabfilecontent|Choose the first option to see all of the input rows in the failure file or the second option to only see the rows that failed one or more rules 
 optiontabfilelayout|Choose the first option to produce a failure file in the same format as the input file or the second option to produce a failure file in the same format as the passing file specified in the Output tab
 optiontabfilecolumns|Choose which of the additional failure columns you wish to display in the failure file. The Failure Description is the system generated detailed failure reason and Failure Code is the user-defined code entered for each rule
-optionprocessing|
+optionprocessing|The first option ensures that all rows matching the Input Configuration will be processed for pass/fail and those rows not matching will show as a fail on the processing screen and in the failure file, with a failure description of “Row does not match schema”. Choosing the second option, if one of the rows doesn’t match the Input Configuration, then no processing will occur
 
 ** common fields on layouts ** note: do not change this line
 conditional|If a conditional rule passes then any child rules that exist will be checked, otherwise they will be ignored|conditional check box for those rules that contain it
@@ -27,54 +23,54 @@ ruledate|
 ruletransform|
 
 ** the function field for each of the above data types - "rule[datatype][function]" ** note: do not change this line
-ruletextequals|Compares a file value with a text string to check if they are equal 
-ruletextnotequals|Compares a file value with a text string to check that they differ
-ruletextregexmatches|Compares a file value with a regular expression string to check if the value matches the specified format
-ruletextregexdoesnotmatch|Compares a file value with a regular expression string to check that the value does not match the specified format
-ruletextinlist|Compares a file value with a text list to check if the value matches any item in the list
-ruletextnotinlist|Compares a file value with a text list to check that the value does not match any item in the list
-ruletextinexternallist|Compares a file value with a named text list held outside of the application, to check if the value matches any item in the list
-ruletextnotinexternallist|Compares a file value with a named text list held outside of the application, to check that the value does not match any item in the list
-ruletextlength|Checks whether a file value is of the specified character length or within a specified length range 
-ruletextcontains|Checks whether a file value contains a single text string or any item in a list of text strings
-ruletextdoesnotcontain|Checks whether a file value does not contain a single text string or any item in a list of text strings
+ruletextequals|Compares a source value with a text string to check if they are equal 
+ruletextnotequals|Compares a source value with a text string to check that they differ
+ruletextregexmatches|Compares a source value with a regular expression string to check if the value matches the specified format
+ruletextregexdoesnotmatch|Compares a source value with a regular expression string to check that the value does not match the specified format
+ruletextinlist|Compares a source value with a text list to check if the value matches any item in the list
+ruletextnotinlist|Compares a source value with a text list to check that the value does not match any item in the list
+ruletextinexternallist|Compares a source value with a named text list held outside of the application, to check if the value matches any item in the list
+ruletextnotinexternallist|Compares a source value with a named text list held outside of the application, to check that the value does not match any item in the list
+ruletextlength|Checks whether a source value is of the specified character length or within a specified length range 
+ruletextcontains|Checks whether a source value contains a single text string or any item in a list of text strings
+ruletextdoesnotcontain|Checks whether a source value does not contain a single text string or any item in a list of text strings
 
-rulenumberequals|Compares a file value with a number to check if they are equal 
-rulenumbernotequals|Compares a file value with a number to check that they differ
-rulenumbergreaterthan|Determines whether a file value is greater than a specified number
-rulenumbernotgreaterthan|Determines whether a file value is not greater than a specified number
-rulenumberlessthan|Determines whether a file value is less than a specified number
-rulenumbernotlessthan|Determines whether a file value is not less than a specified number
-rulenumberbetween|Determines whether a file value is equal to or falls between two numbers
-rulenumberinlist|Compares a file value with a number list to check if the value matches any item in the list
-rulenumbernotinlist|Compares a file value with a number list to check that the value does not match any item in the list
-rulenumberisnumber|Determines whether the file value is a valid number
+rulenumberequals|Compares a source value with a number to check if they are equal 
+rulenumbernotequals|Compares a source value with a number to check that they differ
+rulenumbergreaterthan|Determines whether a source value is greater than a specified number
+rulenumbernotgreaterthan|Determines whether a source value is not greater than a specified number
+rulenumberlessthan|Determines whether a source value is less than a specified number
+rulenumbernotlessthan|Determines whether a source value is not less than a specified number
+rulenumberbetween|Determines whether a source value is equal to or falls between two numbers
+rulenumberinlist|Compares a source value with a number list to check if the value matches any item in the list
+rulenumbernotinlist|Compares a source value with a number list to check that the value does not match any item in the list
+rulenumberisnumber|Determines whether the source value is a valid number
 
-ruledateequals|Compares a file value with a date to check if they are equal 
-ruledatenotequals|Compares a file value with a date to check that they differ
-ruledatebefore|Determines whether a file value falls before a specified date
-ruledatenotbefore|Determines whether a file value does not fall before a specified date
-ruledateafter|Determines whether a file value falls after a specified date
-ruledatenotafter|Determines whether a file value does not fall after a specified date
-ruledatebetween|Determines whether a file value is equal to or falls between two dates
-ruledateinlist|Compares a file value with a list of dates to check if the value matches any item in the list
-ruledatenotinlist|Compares a file value with a list of dates to check that the value does not match any item in the list
-ruledateinwindow|Determines whether a file value falls within a specified date window that covers the day of processing and the specified number of days, months or years before/after the day of processing
-ruledateisdate|Determines whether the file value is a valid date in the specified date format
+ruledateequals|Compares a source value with a date to check if they are equal 
+ruledatenotequals|Compares a source value with a date to check that they differ
+ruledatebefore|Determines whether a source value falls before a specified date
+ruledatenotbefore|Determines whether a source value does not fall before a specified date
+ruledateafter|Determines whether a source value falls after a specified date
+ruledatenotafter|Determines whether a source value does not fall after a specified date
+ruledatebetween|Determines whether a source value is equal to or falls between two dates
+ruledateinlist|Compares a source value with a list of dates to check if the value matches any item in the list
+ruledatenotinlist|Compares a source value with a list of dates to check that the value does not match any item in the list
+ruledateinwindow|Determines whether a source value falls within a specified date window that covers the day of processing and the specified number of days, months or years before/after the day of processing
+ruledateisdate|Determines whether the source value is a valid date in the specified date format
 
-ruletransformsettextvalue|Sets a file value to a text string
-ruletransformsetnumbervalue|Sets a file value to a number
-ruletransformsetdatevalue|Sets a file value to a date in the specified date format
-ruletransformsetdatefromtoday|Sets a file value to a date in the specified date format that is relative to the day of processing
-ruletransformsetdateformat|Converts a file value from a date in the original date format to a new date format
-ruletransformappendtext|Appends a text string to the start or end of a file value
+ruletransformsettextvalue|Sets a source value to a text string
+ruletransformsetnumbervalue|Sets a source value to a number
+ruletransformsetdatevalue|Sets a source value to a date in the specified date format
+ruletransformsetdatefromtoday|Sets a source value to a date in the specified date format that is relative to the day of processing
+ruletransformsetdateformat|Converts a source value from a date in the original date format to a new date format
+ruletransformappendtext|Appends a text string to the start or end of a source value
 ruletransformcopyvalue|Copies the value in the column selected in Column Name to the column selected in Parameter
 ruletransformcopyselectedlength|Copies the number of characters specified by Length from the character position specified by Start Position to the Destination column
-ruletransformchangedatevalue|Adds or subtracts a specifed number of days, months or years to/from a file value
-ruletransformsetrandomcharacters|Sets a file value to a specified number of random generated characters
+ruletransformchangedatevalue|Adds or subtracts a specifed number of days, months or years to/from a source value
+ruletransformsetrandomcharacters|Sets a source value to a specified number of random generated characters
 ruletransformexternallook-up|Replaces a text value, that matches the value of the first column of an external list, with a value in the second column of the list
 
-rulegroupgroup|
+rulegroupgroup|Groups link rules together allowing AND and OR operators to be set for rules
 
 ** template specific fields ** note: do not change this line
 parameter||Single parameter to compare column value against
