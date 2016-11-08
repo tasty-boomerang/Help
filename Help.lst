@@ -68,7 +68,7 @@ ruletransformcopyvalue|Copies the value in the column selected in Column Name to
 ruletransformcopyselectedlength|Copies the number of characters specified by Length from the character position specified by Start Position to the Destination column
 ruletransformchangedatevalue|Adds or subtracts a specifed number of days, months or years to/from a source value
 ruletransformsetrandomcharacters|Sets a source value to a specified number of random generated characters
-ruletransformexternallook-up|Replaces a text value, that matches the value of the first column of an external list, with a value in the second column of the list
+ruletransformexternallook-up|Replaces a text value, that matches the value of the first column of a list, with a value in the second column of the list
 
 rulegroupgroup|Groups link rules together allowing AND and OR operators to be set for rules
 
