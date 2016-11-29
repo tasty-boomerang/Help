@@ -67,23 +67,23 @@ ruletransformcopyselectedlength|Copies the number of characters specified by Len
 ruletransformchangedatevalue|Adds or subtracts a specifed number of days, months or years to/from a source value
 ruletransformsetrandomcharacters|Sets a source value to a specified number of random generated characters
 ruletransformexternallook-up|Replaces a text value, that matches the value of the first column of a list, with a value in the second column of the list
+ruletransformcalculate|Can add to, subtract from, multiply by or divide a source value, based on an entered value and the amount of decimal places specified 
 
 rulegroupgroup|Groups link rules together allowing AND and OR operators to be set for rules
 
 ** template specific fields ** note: do not change this line
 parametervalue||Single parameter to compare column value against
-parametercolumn||(Column containing single parameter to compare column value against
+parametercolumn|Uses the value in the selected column|Column containing single parameter to compare column value against
 listvalues|The list should be entered one item below another and not as a horizontal delimited list|list parameter in static list rules
 listnamed|Select a pre-defined named list|Named list parameter selected from drop down 
-externallist||list parameter in external list rules
-optionlengthcomparison||Comparison type (equals, is at least, is at most) in text length rule
+optionlengthcomparison|Select the exact length or the maximum or minimum length of characters|Comparison type (equals, is at least, is at most) in text length rule
 lengthvalue|Length of a character string|Size value to compare in the text length rule
 lengthcolumn|Column must contain a number that defines the length of a character string|Column containing size value to compare in the text length rule
-optioncontainsposition||Position of the text (anywhere, at start, at end) in text contains rule
+optioncontainsposition|Where to search within the source value for a match|Position of the text (anywhere, at start, at end) in text contains rule
 fromnumber||lower range in the number between rule
 tonumber||upper range in the number between rule
-datevalue||Date calendar picker selector on date rules
-datecolumn||Date column picker selector on date rules
+datevalue|Select a date from the calendar picker|Date calendar picker selector on date rules
+datecolumn|Uses the date in the selected column|Date column picker selector on date rules
 datestart||date start calendar/column picker selector on date range rule
 dateend||date end calendar/column picker selector on date range rule
 unitamount|The number of days, months or years from the day of processing|unit type (days, months, years) in date rules
@@ -97,7 +97,7 @@ numberparameter|The data value will be set to the number entered|number paramete
 dateformatin|Uses standard annotation for date and time to enable accurate date matching. Please note "MM" represents months and "mm" represents minutes. There are six predefined formats to choose from, but any other format can be typed if required. Use a for AM or PM. Milliseconds are not currently supported but can be ignored by using ".000"|input format in transform set date format
 dateformatout|Uses standard annotation for date and time to enable accurate date matching. Please note "MM" represents months and "mm" represents minutes. There are six predefined formats to choose from, but any other format can be typed if required. Use a for AM or PM. Milliseconds are not currently supported but can be ignored by using ".000"|output format in transform set date format
 appendvalue|Text string to append|Value to append in transform append text
-appendcolumn||Column to append|value to append in transform append text
+appendcolumn|Choose a column to append|Column to append|value to append in transform append text
 minlength|Minimum number of characters generated (minimum length allowed is 6 characters)|minimum length in transform set random characters
 maxlength|Maximum number of characters generated (maximum length allowed is 40 characters)|maximum length in transform set random characters
 optionrandomspecial|The "At Least One" option ensures that one or more special characters are included in the random characters generated. Selecting the "Unrestricted" option means that the characters generated may not include any special characters|(RENAMED)special chr. option in transform set random characters
@@ -108,3 +108,7 @@ substringlength|The number of characters copied|The length parameter for a subst
 optionappendposition||Position to append the text (at start, at end) in transform append
 optionlookupposition|Search for an exact match or for the list characters anywhere, at the start or at the end of the source column value|Position of the text (exact, anywhere, at start, at end) in transform lookup
 optionlookupreplace|Replace the entire source column value with the list value or only replace those characters within the source value that were matched|Replace all or only matched characters
+calcparametervalue||Parameter value to apply to source value for calculate operations
+calcparametercolumn|Uses the numeric value in the selected column for the calculation|Parameter column selected from column picker to apply to source value for calculate operations
+optioncalculateoperator|
+decimalplaces|Number of decimal places in the calculation result|No of decimal places
