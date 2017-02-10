@@ -62,14 +62,13 @@ ruletransformsetdatevalue|Sets a source value to a date in the specified date fo
 ruletransformsetdatefromtoday|Sets a source value to a date in the specified date format that is relative to the day of processing
 ruletransformsetdateformat|Converts a source value from a date in the original date format to a new date format
 ruletransformappendtext|Appends a text string to the start or end of a source value
-ruletransformcopyvalue|Copies the value in the column selected in Column Name to the column selected in Parameter
+ruletransformcopyvalue|Copies the value in the column selected in Column Name to the column selected in Destination
 ruletransformcopyselectedlength|Copies the number of characters specified by Length from the character position specified by Start Position to the Destination column
 ruletransformsplitstring|Copies the chosen element of a source value separated by a specified character to another column (so element 3 of a source value A:B:C with a separator character of : is C)
 ruletransformchangedatevalue|Adds or subtracts a specifed number of days, months or years to/from a source value
 ruletransformsetrandomcharacters|Sets a source value to a specified number of random generated characters
 ruletransformexternallook-up|Replaces a text value, that matches the value of the first column of a list, with a value in the second column of the list
 ruletransformcalculate|Can add to, subtract from, multiply by or divide a source value, based on an entered value and the amount of decimal places specified 
-ruletransformsplitstring
 
 rulegroupgroup|Groups link rules together allowing AND and OR operators to be set for rules
 
