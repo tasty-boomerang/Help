@@ -25,8 +25,8 @@ ruletransform|
 ** the function field for each of the above data types - "rule[datatype][function]" ** note: do not change this line
 ruletextequals|Compares a source value with a text string to check if they are equal 
 ruletextnotequals|Compares a source value with a text string to check that they differ
-ruletextregexmatches|Compares a source value with a regular expression string to check if the value matches the specified format
-ruletextregexdoesnotmatch|Compares a source value with a regular expression string to check that the value does not match the specified format
+ruletextpatternmatch|Compares a source value with a regular expression string to check if the value matches the specified format
+ruletextpatterndoesnotmatch|Compares a source value with a regular expression string to check that the value does not match the specified format
 ruletextinlist|Compares a source value with a text list to check if the value matches any item in the list
 ruletextnotinlist|Compares a source value with a text list to check that the value does not match any item in the list
 ruletextlength|Checks whether a source value is of the specified character length or within a specified length range 
