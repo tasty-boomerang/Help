@@ -113,6 +113,8 @@ optionrandomnumber|The "At Least One" option ensures that one or more numbers ar
 optionrandomupper|The "At Least One" option ensures that one or more uppercase letters are included in the random characters generated. Selecting the "Unrestricted" option means that the characters generated may not include any uppercase letters|SetRandomCharacters rule:uppercase option
 optionlookupposition|Search for an exact match or for the list characters anywhere, at the start or at the end of the source column value|Look-up rule:Position of the text (exact, anywhere, at start, at end)
 optionlookupreplace|Replace the entire source column value with the list value or only replace those characters within the source value that were matched|Look-up rule:Replace all or only matched characters
+lookuplistvalues|Each row of the list must be pipe-separated|Look-up rule:internal list comparator
+lookuplistnamed||Look-up rule:named list comparator
 calcparametervalue||Calculate rule:Parameter value to apply to source value for calculate operations
 calcparametercolumn|Uses the numeric value in the selected column for the calculation|Calculate rule:Parameter column selected from column picker to apply to source value for calculate operations
 optioncalculateoperator||Calculate rule:operator
