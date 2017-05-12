@@ -68,6 +68,7 @@ ruletransformcopysplitselection|Copies the chosen element of a source value sepa
 ruletransformchangedatevalue|Adds or subtracts a specifed number of days, months or years to/from a source value
 ruletransformsetrandomcharacters|Sets a source value to a specified number of random generated characters
 ruletransformlook-up|Replaces a text value, that matches the value of the first column of a list, with a value in the second column of the list
+ruletransformpatternmatchreplace|Compares a source value with the regular expression string in Match and then replaces the specific characters that match the regular expression with the characters in Replacement|Matches column value and replaces specific characters that match a RegEx pattern
 ruletransformcalculate|Can add to, subtract from, multiply by or divide a source value, based on an entered value and the amount of decimal places specified 
 
 rulegroupgroup|Groups link rules together allowing AND and OR operators to be set for rules
@@ -115,6 +116,10 @@ optionlookupposition|Search for an exact match or for the list characters anywhe
 optionlookupreplace|Replace the entire source column value with the list value or only replace those characters within the source value that were matched|Look-up rule:Replace all or only matched characters
 lookuplistvalues|Each row of the list must be pipe-separated|Look-up rule:internal list comparator
 lookuplistnamed|Select a pre-defined named list|Look-up rule:named list comparator
+patternmatchvalue|Enter a regular expression here that will be used for matching certain characters within the source value|Pattern Match Replace rule:Value matches regex expression defined with column or value selected
+patternmatchcolumn|Column should contain a regular expression that will be used for matching certain characters within the source value|Pattern Match Replace rule:Column matches regex expression defined with column or value selected
+patternreplacevalue|Enter the replacement character(s) here. Leave blank to remove the characters that match from the source value|Pattern Match Replace rule:Value replaces matched regex with column or value selected
+patternreplacecolumn|Column should contain the replacement character(s)|Pattern Match Replace rule:Column replaces matched regex with column or value selected
 calcparametervalue||Calculate rule:Parameter value to apply to source value for calculate operations
 calcparametercolumn|Uses the numeric value in the selected column for the calculation|Calculate rule:Parameter column selected from column picker to apply to source value for calculate operations
 optioncalculateoperator||Calculate rule:operator
