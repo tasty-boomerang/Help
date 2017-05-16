@@ -118,7 +118,7 @@ lookuplistvalues|Each row of the list must be pipe-separated|Look-up rule:intern
 lookuplistnamed|Select a pre-defined named list|Look-up rule:named list comparator
 patternmatchvalue|Enter a regular expression here that will be used for matching certain characters within the source value|Pattern Match Replace rule:Value matches regex expression defined with column or value selected
 patternmatchcolumn|Column should contain a regular expression that will be used for matching certain characters within the source value|Pattern Match Replace rule:Column matches regex expression defined with column or value selected
-patternreplacevalue|Enter the replacement character(s) here. Leave blank to remove the characters that match from the source value|Pattern Match Replace rule:Value replaces matched regex with column or value selected
+patternreplacevalue|Enter the replacement character(s) here. Leave blank to remove the characters from the source value that match|Pattern Match Replace rule:Value replaces matched regex with column or value selected
 patternreplacecolumn|Column should contain the replacement character(s)|Pattern Match Replace rule:Column replaces matched regex with column or value selected
 calcparametervalue||Calculate rule:Parameter value to apply to source value for calculate operations
 calcparametercolumn|Uses the numeric value in the selected column for the calculation|Calculate rule:Parameter column selected from column picker to apply to source value for calculate operations
