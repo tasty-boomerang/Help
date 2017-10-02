@@ -81,12 +81,13 @@ ruletransformcalculate|Can add to, subtract from, multiply by or divide a source
 rulegroupgroup|Groups link rules together allowing AND and OR operators to be set for rules
 
 ** workflow help
-taskconnection|Select the SFTP data connection for the folder that you need to connect to in order to retrieve the file to be processed|From/To SFTP Connection 
-taskincludefilemask|Enter the name of the file or file mask for the file to be moved for processing|File Pattern
-tasksourcefolder|Enter the folder path for the SFTP folder that contains the file to be processed|From SFTP specific Source Folder
-taskdestinationpath|Enter the folder path for the SFTP folder that you want the pass file to be sent to|To SFTP specific Destination Path
-taskconfiguration|Select the configuration for the file that you want to process|Pledge Run Configuration
-taskfilepattern|Select the name of the file or file mask for the file to be processed|File Pattern
+taskconnection|Select the SFTP data connection for the folder that you need to connect to in order to retrieve the file to be processed|From/To SFTP Connection tasks:Connection
+tasksourcefolder|Enter the folder path for the SFTP folder that contains the file to be processed|From SFTP task:Source Folder
+taskincludefilemask|Enter the name of the file or file mask for the file to be moved|From SFTP task:File Pattern
+taskdeletesourcefileoptions|Deletes the file from the SFTP folder or leaves it on the server depending on the option selected|From SFTP task:Download File Options
+taskdestinationpath|Enter the folder path for the SFTP folder that you want the pass file to be sent to|To SFTP task:Destination Path
+taskconfiguration|Select the configuration for the file that you want to process|Pledge Run task:Configuration
+taskfilepattern|Select the name of the file or file mask for the file to be processed|Pledge Run task:File Pattern
 taskusername||User Name
 taskpassword||Password
 
