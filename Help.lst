@@ -86,6 +86,7 @@ tasksourcefolder|Enter the folder path for the SFTP folder that contains the fil
 taskincludefilemask|Enter the name of the file or file mask for the file to be downloaded|From SFTP task:File Pattern
 taskdeletesourcefileoptions|Deletes the file from the SFTP folder or leaves it on the server depending on the option selected|From SFTP task:Download File Options
 taskdestinationpath|Enter the folder path for the SFTP folder that you want the file(s) to be uploaded to|To SFTP task:Destination Path
+taskuploadfilemask|Enter the name of the file or file mask for the file for the SFTP destination|To SFTP specific Destination Path
 taskconfiguration|Select the configuration for the file that you want to process|Pledge Run task:Configuration
 taskfilepattern|Select the name of the file or file mask for the file to be processed|Pledge Run task:File Pattern
 taskusername||User Name
