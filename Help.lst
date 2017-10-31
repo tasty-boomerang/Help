@@ -21,8 +21,6 @@ ruletext|
 rulenumber|
 ruledate|
 ruletransform|
-taskconnect|
-taskprocess|
 
 ** page help
 namedlistname||Named List page list name
@@ -82,10 +80,6 @@ ruletransformcalculate|Can add to, subtract from, multiply by or divide a source
 
 rulegroupgroup|Groups link rules together allowing AND and OR operators to be set for rules
 
-taskconnectfromsftp|Download a specific file, or many files using a file pattern, from an SFTP server to Pledge
-taskconnecttosftp|Upload a specific file, or many files using a file pattern, from Pledge to an SFTP server 
-taskprocesspledgerun|Process a file, or many files using a file pattern, with a Pledge Configuration and name the output files, if required
-
 ** template specific fields ** note: do not change this line
 parametervalue||Single parameter to compare column value against
 parametercolumn|Uses the value in the selected column|Column containing single parameter to compare column value against
@@ -137,6 +131,15 @@ calcparametervalue||Calculate rule:Parameter value to apply to source value for 
 calcparametercolumn|Uses the numeric value in the selected column for the calculation|Calculate rule:Parameter column selected from column picker to apply to source value for calculate operations
 optioncalculateoperator||Calculate rule:operator
 decimalplaces|Number of decimal places in the calculation result|Calculate rule:decimal places
+
+** the data type field - "task[datatype]" ** note: do not change this line
+taskconnect|
+taskprocess|
+
+** the function field for each of the above data types - "rule[datatype][function]" ** note: do not change this line
+taskconnectfromsftp|Download a specific file, or many files using a file pattern, from an SFTP server to Pledge
+taskconnecttosftp|Upload a specific file, or many files using a file pattern, from Pledge to an SFTP server 
+taskprocesspledgerun|Process a file, or many files using a file pattern, with a Pledge Configuration and name the output files, if required
 
 ** workflow task help
 taskconnection|Select the SFTP data connection for the folder that you need to connect to|From/To SFTP Connection tasks:Connection
