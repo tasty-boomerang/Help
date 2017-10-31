@@ -136,7 +136,7 @@ decimalplaces|Number of decimal places in the calculation result|Calculate rule:
 taskconnect|
 taskprocess|
 
-** the function field for each of the above data types - "rule[datatype][function]" ** note: do not change this line
+** the function field for each of the above data types - "task[datatype][function]" ** note: do not change this line
 taskconnectfromsftp|Download a specific file, or many files using a file pattern, from an SFTP server to Pledge
 taskconnecttosftp|Upload a specific file, or many files using a file pattern, from Pledge to an SFTP server 
 taskprocesspledgerun|Process a file, or many files using a file pattern, with a Pledge Configuration and name the output files, if required
