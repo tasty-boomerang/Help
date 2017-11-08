@@ -27,7 +27,7 @@ namedlistname||Named List page list name
 namedlistdescription||Named List page list description
 namedlisttype||Named List page list type (currently only 'Lookup')
 namedlistseparator|Enter the character in the list file that separates the column values. Press the TAB key if the file is Tab separated.|Named List page list separator
-namedlistfile|Select the latest file that contains the list you with to associate with this list name|Named List page list name
+namedlistfile|Select the latest file containing the list that you wish to associate with this list name|Named List page list name
 
 ** the function field for each of the above data types - "rule[datatype][function]" ** note: do not change this line
 ruletextequals|Compares a source value with a text string to check if they are equal 
