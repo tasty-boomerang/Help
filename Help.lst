@@ -13,7 +13,7 @@ optionprocessing|The first option ensures that all rows matching the Input Confi
 conditional|If a conditional rule passes then any child rules that exist will be checked, otherwise they will be ignored|conditional check box for those rules that contain it
 description|This description will show on the main rules screen|description box on all rules
 columnpicker|Select from original input columns and any columns added within the configuration. Output columns added within the configuration will show in blue italics|first (top) column picker control on each rule dialog
-dateformat|Uses standard annotation for date and time to enable accurate date matching. Please note "MM" represents months and "mm" represents minutes. There are six predefined formats to choose from, but any other format can be typed if required. Milliseconds are not currently supported but can be ignored by using ".000"|date format selector
+dateformat|Uses standard annotation for date and time to enable accurate date matching. Please note "MM" represents months and "mm" represents minutes. There are six predefined formats to choose from, but any other format can be typed if required. Use "tt" for AM or PM. Milliseconds are not currently supported but can be ignored by using ".000"|date format selector
 failurecode|This code will appear in the failure file against the failing row to help to identify the exact rule that failed|failure code field on applicable rules
 
 ** the data type field - "rule[datatype]" ** note: do not change this line
@@ -105,8 +105,8 @@ optionchangedateboundary||Boundary type (before, after) in date rules
 parametervalueset||Set Text Value rule:Set column value to static value entered in text box
 parametermetaset|Set the column value to the name of the source file|Set Text Value rule:Set column value to metadata based on the selection (currently only filename)
 numberparameter|The data value will be set to the number entered|SetNumber rule:number parameter
-dateformatin|Uses standard annotation for date and time to enable accurate date matching. Please note "MM" represents months and "mm" represents minutes. There are six predefined formats to choose from, but any other format can be typed if required. Use a for AM or PM. Milliseconds are not currently supported but can be ignored by using ".000"|SetDateFormat rule:input format
-dateformatout|Uses standard annotation for date and time to enable accurate date matching. Please note "MM" represents months and "mm" represents minutes. There are six predefined formats to choose from, but any other format can be typed if required. Use a for AM or PM. Milliseconds are not currently supported but can be ignored by using ".000"|SetDateFormat rule:output format
+dateformatin|Uses standard annotation for date and time to enable accurate date matching. Please note "MM" represents months and "mm" represents minutes. There are six predefined formats to choose from, but any other format can be typed if required. Use "tt" for AM or PM. Milliseconds are not currently supported but can be ignored by using ".000"|SetDateFormat rule:input format
+dateformatout|Uses standard annotation for date and time to enable accurate date matching. Please note "MM" represents months and "mm" represents minutes. There are six predefined formats to choose from, but any other format can be typed if required. Use "tt" for AM or PM. Milliseconds are not currently supported but can be ignored by using ".000"|SetDateFormat rule:output format
 appendvalue|Text string to append|AppendText rule:Value to append
 appendcolumn|Choose a column to append|Column to append|AppendText rule:value to append
 optionappendposition||AppendText rule:Position to append the text (at start, at end)
