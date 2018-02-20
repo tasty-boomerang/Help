@@ -136,10 +136,17 @@ decimalplaces|Number of decimal places in the calculation result|Calculate rule:
 taskconnect|
 taskprocess|
 
+** connection task help
+connectionFtpHost|Host name of the SFTP server, such as sftp.example.com or 99.00.55.1|SFTP Connection
+connectionFtpPort|Port number configured for SFTP server|SFTP Connection
+connectionFtpUsername|Account username for the SFTP server|SFTP Connection
+connectionFtpPassword|Account password for the SFTP server|SFTP Connection
+
 ** the function field for each of the above data types - "task[datatype][function]" ** note: do not change this line
 taskconnectfromsftp|Download a specific file, or many files using a file pattern, from an SFTP server to Pledge
 taskconnecttosftp|Upload a specific file, or many files using a file pattern, from Pledge to an SFTP server 
 taskprocesspledgerun|Process a file, or many files using a file pattern, with a Pledge Configuration and name the output files, if required
+taskprocessreplacelist|Replace a list with a new modified version of the list
 
 ** workflow task help
 taskconnection|Select the SFTP data connection for the folder that you need to connect to|From/To SFTP Connection tasks:Connection
@@ -152,3 +159,5 @@ taskconfiguration|Select the configuration for the file that you want to process
 taskfilepattern|Select the name of the file or file mask for the file to be processed|Pledge Run task:File Pattern
 taskpassfilemask|Enter the exact name for the Passing file or additionally include date/time formatting between curly brackets. An example is Passes_{yyyyMMdd}_{HHmmssfff}.txt for a file with a date/time stamp up to the millisecond that the file was processed.|Pledge Run task:Passing file name
 taskfailfilemask|Enter the exact name for the Failing file or additionally include date/time formatting between curly brackets. An example is Failures_{yyyyMMdd}_{HHmmssfff}.txt for a file with a date/time stamp up to the millisecond that the file was processed.|Pledge Run task:Failing file name
+tasklookup|Select the list that you want to update|Replace List:Named List dropdown
+tasklookupfile|Enter the filename of an uploaded or processed file that will replace the existing list|Replace List:File Name
